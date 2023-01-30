@@ -1,0 +1,719 @@
+.blog-details-post .entry-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+@media(min-width: 768px) {
+
+    .blog-details-post .entry-footer {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media(min-width: 1200px) {
+
+    .blog-details-post .entry-footer {
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+.blog-details-post .entry-footer strong {
+    color: $polimark-color-black;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.blog-details-post .entry-footer .cat-info,
+.blog-details-post .entry-footer .tags-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: -10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: center;
+}
+
+
+.blog-details-post .entry-footer .cat-info {
+    margin-bottom: 20px;
+}
+
+
+.blog-details-post .entry-footer a {
+    color: $polimark-color-text;
+    text-transform: uppercase;
+    border: 1px solid $polimark-color-border;
+    border-radius: $polimark-border-radius;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 800;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1;
+    margin-left: 10px;
+    transition: all 500ms ease;
+    margin-top: 10px;
+}
+
+.blog-details-post .entry-footer a:hover {
+    background-color: $polimark-color-base;
+    border-color: $polimark-color-base;
+    color: #fff;
+}
+
+.blog-details-post .post-thumbnail {
+    overflow: hidden;
+    border-top-right-radius: $polimark-border-radius;
+    border-top-left-radius: $polimark-border-radius;
+    display: block;
+    position: relative;
+}
+
+.blog-details-post .post-thumbnail img {
+    width: 100%;
+}
+
+.blog-details__content .blog-one-card__meta {
+    margin-left: -5px;
+}
+
+@media(min-width: 768px) {
+    .blog-details__content .blog-one-card__meta {
+        margin-left: -15px;
+    }
+}
+
+.blog-details__content {
+    border: 1px solid $polimark-color-border;
+    border-radius: $polimark-border-radius;
+    padding: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 22px;
+}
+
+.has-post-thumbnail .blog-details__content {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+@media(min-width: 992px) {
+
+    .blog-details__content {
+        padding: 40px;
+        padding-bottom: 32px;
+    }
+}
+
+.blog-details__content p {
+    font-weight: 500;
+}
+
+.blog-details__content a {
+    text-decoration: none;
+}
+
+.blog-details__content a:hover {
+    color: $polimark-color-primary;
+    transition: all 500ms ease;
+}
+
+.comment-content strong,
+.blog-details__content strong {
+    color: $polimark-color-black
+}
+
+.comments-area h1,
+.blog-details__content h1,
+.comment-content h2,
+.blog-details__content h2,
+.comment-content h3,
+.blog-details__content h3,
+.comment-content h4,
+.blog-details__content h4,
+.comment-content h5,
+.blog-details__content h5,
+.comment-content h6,
+.blog-details__content h6 {
+    margin-bottom: 1rem;
+    color: $polimark-color-black;
+}
+
+.blog-details__content ul,
+.comments-area ul,
+.comments-area ol,
+.blog-details__content ol {
+    margin: 0 0 1.5em 0em;
+    font-weight: 500;
+}
+
+.blog-details__content .entry-content p:last-of-type {
+    margin-bottom: 0;
+}
+
+.blog-details__content .entry-content .page-links {
+    margin-top: 1.5em;
+}
+
+.blog-details__content .entry-content p+h1,
+.blog-details__content .entry-content p+h2,
+.blog-details__content .entry-content p+h3,
+.blog-details__content .entry-content p+h4,
+.blog-details__content .entry-content p+h5,
+.blog-details__content .entry-content p+h6 {
+    margin-top: 25px;
+}
+
+.comment-content p+table,
+.blog-details__content p+table {
+    margin-top: 30px;
+}
+
+.blog-details__content blockquote:not([class*=has-]),
+.comment-content blockquote,
+.blog-details__content .wp-block-quote {
+    background-color: $polimark-color-gray;
+    border-left: 2px solid $polimark-color-black;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 7px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.blog-details__content blockquote:not([class*=has-])::before,
+.comment-content blockquote::before,
+.blog-details__content .wp-block-quote::before {
+    content: '\f10d';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    bottom: 0;
+    transform: rotate(180deg);
+    font-size: 100px;
+    color: $polimark-color-base;
+    opacity: 0.4;
+    right: 30px;
+}
+
+.blog-details__content blockquote:not([class*=has-]) p,
+.comment-content blockquote p,
+.blog-details__content .lower-box .wp-block-quote p {
+    margin-bottom: 15px;
+}
+
+.blog-details__content blockquote:not([class*=has-]) cite,
+.comment-content blockquote cite,
+.blog-details__content .lower-box .wp-block-quote cite {
+    color: $polimark-color-black;
+}
+
+.blog-details__content .wp-block-quote.has-text-align-right {
+    border-right: 2px solid $polimark-color-black;
+    border-left: 0;
+
+}
+
+.blog-details__content .wp-block-quote.has-text-align-right::before {
+    right: auto;
+    left: 30px;
+    transform: rotateX(-180deg);
+}
+
+.blog-details__content .lower-box .wp-block-pullquote {
+    border-radius: $polimark-border-radius;
+}
+
+.blog-details__content .wp-block-button {
+    position: relative;
+    z-index: 10;
+}
+
+.blog-details__content .wp-block-button a {
+    transition: all 500ms ease;
+}
+
+.blog-details__content .wp-block-button a:hover {
+    background-color: $polimark-color-base;
+    border-color: $polimark-color-base;
+    color: #ffffff;
+}
+
+.blog-details__content .wp-block-cover {
+    color: #fff;
+}
+
+
+.blog-details__content .page-links {
+    color: $polimark-color-black;
+    display: flex;
+    align-items: center;
+}
+
+.blog-details__content .page-links span,
+.blog-details__content .page-links a {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    color: $polimark-color-black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: $polimark-color-gray;
+    border-radius: 50%;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    transition: all 500ms ease;
+}
+
+.blog-details__content .post-password-form label {
+    font-size: 18px;
+    font-weight: 600;
+    color: $polimark-color-black;
+}
+
+.blog-details__content .post-password-form input[type=password] {
+    width: 200px;
+    height: 50px;
+    background-color: $polimark-color-gray;
+    color: $polimark-color-text;
+    padding-left: 30px;
+    border-radius: 7px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.blog-details__content .post-password-form input[type=submit] {
+    width: 120px;
+    height: 50px;
+    background-color: $polimark-color-black;
+    color: #fff;
+    border-radius: 7px;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: middle;
+    transition: all 500ms ease;
+}
+
+.blog-details__content .post-password-form input[type=submit]:hover {
+    background-color: $polimark-color-base;
+    color: $polimark-color-black;
+}
+
+.blog-details__content .page-links span {
+    background-color: $polimark-color-black;
+    color: #fff;
+}
+
+.blog-details__content .page-links a:hover {
+    background-color: $polimark-color-base;
+    color: #fff;
+}
+
+.blog-details--page .entry-content {
+    margin-top: 0;
+}
+
+.blog-details--page .blog-details__content {
+    padding-top: 30px;
+}
+
+.wp-block-gallery ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.wp-block-archives-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.wp-block-archives-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $polimark-color-text;
+    position: relative;
+    line-height: 30px;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: $polimark-color-text;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+.wp-block-archives-list li+li {
+    margin-top: 10px;
+}
+
+.wp-block-archives-list li a {
+    color: inherit;
+    transition: all 500ms ease;
+}
+
+.wp-block-archives-list li:hover a {
+    color: $polimark-color-black;
+}
+
+.wp-block-categories-dropdown,
+.wp-block-archives-dropdown {
+    margin-bottom: 30px;
+}
+
+.wp-block-categories-dropdown select,
+.wp-block-archives-dropdown select {
+    width: 100%;
+    height: 60px;
+    border-radius: $polimark-border-radius;
+    background-color: $polimark-color-gray;
+    border: 1px solid $polimark-color-border;
+    outline: none;
+    color: $polimark-color-text;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 30px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    font-family: $polimark-font;
+    background-image: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><path fill="rgb(34, 36, 41)" d="M540.1 776.847l472.32-473.63c15.466-15.518 15.44-40.642-0.080-56.134-15.518-15.48-40.656-15.44-56.134 0.080l-444.208 445.438-444.206-445.454c-15.48-15.518-40.602-15.558-56.122-0.080-7.78 7.766-11.67 17.94-11.67 28.114 0 10.148 3.864 20.282 11.59 28.034l472.308 473.632c7.436 7.474 17.556 11.668 28.1 11.668s20.652-4.206 28.102-11.668z"></path></svg>');
+    background-repeat: no-repeat;
+    background-position: right 30px top 50%;
+    background-size: .65em auto;
+}
+
+.wp-block-calendar .wp-calendar-table caption {
+    padding-bottom: 0;
+    line-height: 1;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.wp-block-calendar .wp-calendar-nav {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wp-block-calendar .wp-calendar-nav a {
+    text-decoration: none;
+    line-height: 1;
+    color: $polimark-color-black;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 500ms ease;
+}
+
+.wp-block-latest-comments__comment-meta {
+    font-size: 18px;
+    line-height: 1.889;
+    font-weight: 600;
+    color: $polimark-color-black
+}
+
+.wp-block-latest-comments__comment-meta a {
+    color: inherit
+}
+
+.wp-block-latest-comments__comment-meta a:hover {
+    color: $polimark-color-base
+}
+
+.wp-block-latest-comments__comment-date {
+    font-weight: 500;
+    color: $polimark-color-text;
+}
+
+.wp-block-latest-comments {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.wp-block-latest-comments:not(.has-avatar):not(.has-dates) li {
+    position: relative;
+    padding-left: 68px;
+    min-height: 44px;
+}
+
+.wp-block-latest-comments:not(.has-avatar):not(.has-dates) li+li {
+    margin-top: 20px;
+}
+
+.wp-block-latest-comments:not(.has-avatar):not(.has-dates) li::before {
+    content: "\f075";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $polimark-color-black;
+    width: 44px;
+    height: 44px;
+    color: #fff;
+    margin-right: 20px;
+    transition: all 500ms ease;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.wp-block-latest-posts__list.has-dates {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.wp-block-latest-posts__list.has-dates li {
+    position: relative;
+    padding-left: 64px;
+    font-size: 16px;
+    line-height: 1.889;
+    font-weight: 600;
+    transition: all 500ms ease;
+    color: $polimark-color-text;
+}
+
+.wp-block-latest-posts__list.has-dates li+li {
+    margin-top: 10px;
+}
+
+.wp-block-latest-posts__list.has-dates li a {
+    color: $polimark-color-black;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.wp-block-latest-posts__list.has-dates li::before {
+    content: '\f302';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $polimark-color-black;
+    width: 44px;
+    height: 44px;
+    color: #fff;
+    transition: all 500ms ease;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+.wp-block-latest-posts__list.is-grid {
+    margin-left: 0;
+}
+
+.wp-block-latest-posts__list.is-grid li {
+    font-size: 18px;
+    font-weight: 600;
+    color: $polimark-color-black;
+}
+
+.wp-block-latest-posts__list.is-grid li a {
+    color: inherit;
+}
+
+.wp-block-latest-posts__list.is-grid li a:hover {
+    color: $polimark-color-base
+}
+
+.wp-block-latest-posts__list.is-grid.has-dates li {
+    padding-left: 0;
+}
+
+.wp-block-latest-posts__list.is-grid.has-dates li::before {
+    position: relative;
+    top: auto;
+    left: 0;
+    margin-bottom: 10px;
+}
+
+.wp-block-search label {
+    font-size: 18px;
+    color: $polimark-color-black;
+    font-weight: 600;
+}
+
+.wp-block-search input[type=search] {
+    display: block;
+    border: none;
+    outline: none;
+    width: 100%;
+    max-width: 300px;
+    position: relative;
+    line-height: 40px;
+    padding: 19px 80px 19px 35px;
+    background: $polimark-color-gray;
+    color: $polimark-color-text;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: $polimark-font;
+    width: 100%;
+    height: 80px;
+    border: 1px solid $polimark-color-gray;
+    border-radius: 7px;
+    transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+}
+
+.wp-block-search .wp-block-search__button {
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+    outline: none;
+    background-color: $polimark-color-black;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+    padding: 18px 50px;
+    font-size: 18px;
+    font-weight: 700;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    text-transform: uppercase;
+    letter-spacing: .01em;
+}
+
+.wp-block-search .wp-block-search__button:hover {
+    background-color: $polimark-color-gray;
+    color: $polimark-color-black;
+}
+
+.wp-block-tag-cloud {
+    margin-left: -5px;
+}
+
+.wp-block-tag-cloud a {
+    font-size: 18px !important;
+    color: $polimark-color-text;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    transition: all 500ms ease;
+}
+
+.wp-block-tag-cloud a:hover {
+    color: $polimark-color-black
+}
+
+.wp-block-tag-cloud a:not(:last-of-type)::after {
+    content: ',';
+}
+
+.wp-block-rss {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.wp-block-rss li {
+    position: relative;
+    padding-left: 68px;
+    font-size: 16px;
+    font-weight: 600;
+    color: $polimark-color-black;
+    min-height: 44px;
+}
+
+.wp-block-rss li+li {
+    margin-top: 20px;
+}
+
+.wp-block-rss li a {
+    color: inherit;
+}
+
+.wp-block-rss li::before {
+    content: '\f09e';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $polimark-color-black;
+    width: 44px;
+    height: 44px;
+    color: #fff;
+    transition: all 500ms ease;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+
+
+
+.comments-area .comments-title {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.blog-details__content-title,
+.comments-area .comments-title {
+    font-size: 36px;
+    font-weight: 800;
+    color: $polimark-color-black;
+    margin: 0;
+    margin-bottom: 60px;
+}
+
+.blog-details__content-title {
+    margin-bottom: 5px;
+}
+
+
+.blog-details-post {
+    figcaption {
+        margin-bottom: 20px;
+    }
+
+    .wp-block-button {
+        margin-bottom: 10px;
+    }
+}

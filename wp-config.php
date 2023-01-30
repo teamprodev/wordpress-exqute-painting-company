@@ -20,13 +20,13 @@
 
 // ** Параметры базы данных: Эту информацию можно получить у вашего хостинг-провайдера ** //
 /** Имя базы данных для WordPress */
-define( 'DB_NAME', 'wordpress' );
+define( 'DB_NAME', 'yangi' );
 
 /** Имя пользователя базы данных */
 define( 'DB_USER', 'root' );
 
 /** Пароль к базе данных */
-define( 'DB_PASSWORD', '' );
+define( 'DB_PASSWORD', 'qayumov9449' );
 
 /** Имя сервера базы данных */
 define( 'DB_HOST', 'localhost' );
@@ -48,14 +48,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         '93v9`^^^7D}EIxwDh EDV3FA xM5FhT+DtuI5`iE SyO//i}R F,eZ_RMAP])n`]' );
-define( 'SECURE_AUTH_KEY',  '$MX^MoVp<3+cor~fAqy=vN7C=]C8K0|<oatQ$ob}X+JSe^@BC^OvG*_fU6Sbs@C8' );
-define( 'LOGGED_IN_KEY',    'k9qRDK%JN>[iZ1~dx:pMHn,RMz+wg}r$=ZJyB95<:io8R+6&W`=5tf$#08WGMXv.' );
-define( 'NONCE_KEY',        ':^$-X,5,[(;v#oSy1;wMUD,=JA<oZhM#1b4@>nTt6kYLw<cr(E&Tu<.(HqfEjo56' );
-define( 'AUTH_SALT',        'Hn/Ph2XJB%uR(:WV9_,]2vNH!&xB5U_qYm:h#~fP#%rPVgQE9x}61o6Fl]RrZXHX' );
-define( 'SECURE_AUTH_SALT', 'EWu.{Y)3L]LNPWikmxN/X0TPA:B;{}aSt;EplV!xq&Q78Ie~.?lc_xF;o nFzUvZ' );
-define( 'LOGGED_IN_SALT',   '9V<AJ<;ZscB%@PgdG8*vrr^k2#w!6?g9D;p|v@Mo5FxcK>RvlA4sf;S_p!N_fogt' );
-define( 'NONCE_SALT',       'v}$9s2eg6QWlH/.k-`1B-vC5f.jyV&B)>l9TJBzkRayfx<H}m#<0suiZzl|>)4Q_' );
+define( 'AUTH_KEY',         'J?LKuA>eu+I# ;[WK6*1D<dCvFO&eFft}0hrShp}c}m?c}vJh; @bZYnS7pWAx^B' );
+define( 'SECURE_AUTH_KEY',  '{34cjZ!t*Wo)FnTv!3]#ew[8[r*I|#[B*8W+ wpDG3vHWyqJVoU,a8mKh8X>>I.:' );
+define( 'LOGGED_IN_KEY',    'k`erj@xA@f~dho7zt@WgY8lkp(Cf_p)2k:{LSRBrkh?D>E_y%g~FX*etu$OxR&A>' );
+define( 'NONCE_KEY',        'qdZ3t{a14|ZSSw%!G0Km#0^1b%PM(o((:i4&Qk6[cF)?t-i{)3bG3^xX-(4|6wnJ' );
+define( 'AUTH_SALT',        ' ;ycUg`SO>5[4Qlzi[lV^0J8{;oL0f&>sijC[}24{`eK`OyS2I(TDrBIM!RG>gbO' );
+define( 'SECURE_AUTH_SALT', 'sm=_*L[:67TxQy-`fF}#I3f05x8YJ^;e`#+}jd1K^a?yfuE=aku %9NM.=H!D7q{' );
+define( 'LOGGED_IN_SALT',   '49![8Z*s:ug6SX$t#qo[6^kM/VJ (L*PJf8|K:hls~t)I=Y`Zw;A1QFwtw4f,%7j' );
+define( 'NONCE_SALT',       'X,^qnOUv3wJ~2MuNFl5$[{ Y43p4EGW`hF0j`rzf:E)1cu*m%O*6W%[u=M4X:Cv^' );
 
 /**#@-*/
 

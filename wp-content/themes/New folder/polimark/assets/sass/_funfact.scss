@@ -1,0 +1,68 @@
+.facts-section {
+    position: relative;
+
+    .counter-column {
+        text-align: center;
+
+        .content>i {
+            width: 120px;
+            height: 120px;
+            background: $polimark-color-black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            font-size: 64px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 50%;
+            transition: all 500ms ease;
+
+            &::before {
+                display: block;
+                transform: scale(1);
+                transition: transform 500ms ease;
+            }
+
+            &:hover {
+                background-color: #fff;
+                color: $polimark-color-black;
+            }
+
+            &:hover::before {
+                transform: scale(.9);
+            }
+        }
+    }
+
+
+
+    .count-outer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 72px;
+        color: $polimark-color-base;
+        line-height: 1;
+        font-weight: 800;
+        text-transform: lowercase;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        span {
+            line-height: 1;
+            display: block;
+        }
+    }
+
+    .counter-title {
+        margin: 0;
+        line-height: 1;
+        color: #fff;
+        font-weight: 500;
+        font-size: 30px;
+        text-align: center;
+    }
+}

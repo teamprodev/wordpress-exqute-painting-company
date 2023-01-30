@@ -1,0 +1,223 @@
+.call-to-action {
+    position: relative;
+
+    .inner-container {
+        border-top-left-radius: 18px;
+        border-top-right-radius: 18px;
+        background-color: $polimark-color-base;
+        display: flex;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        padding: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+
+        @media(min-width: 992px) {
+            padding-left: 60px;
+            padding-right: 60px;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 70px;
+            padding-bottom: 70px;
+            flex-direction: row;
+            text-align: left;
+        }
+    }
+
+    .thm-btn {
+        padding-top: 17px;
+        padding-bottom: 17px;
+        background-color: $polimark-color-black;
+
+        @media(max-width: 320px) {
+            font-size: 15px;
+            padding-left: 24px;
+
+            i {
+                width: 30px;
+                height: 30px;
+                font-size: 14px;
+            }
+        }
+
+        &:hover {
+            background-color: #fff;
+            color: $polimark-color-black;
+
+            i {
+                background-color: $polimark-color-black;
+                color: #fff;
+            }
+        }
+    }
+
+    &__title {
+        margin: 0;
+        color: #fff;
+        font-weight: 800;
+
+        font-size: 35px;
+        margin-bottom: 30px;
+
+        @media(min-width: 992px) {
+            margin-bottom: 0;
+            font-size: 40px;
+        }
+
+        br {
+            display: none;
+
+            @media(min-width: 992px) {
+                display: inherit;
+            }
+        }
+    }
+}
+
+.call-to-action-two {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+
+    @media(min-width: 992px) {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .inner-container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        &:nth-child(odd),
+        &:nth-child(odd) .call-to-action-two__background-image {
+            background-color: $polimark-color-background-primary;
+            border-top-right-radius: 18px;
+            border-bottom-right-radius: 18px;
+        }
+
+        &:nth-child(even),
+        &:nth-child(even) .call-to-action-two__background-image {
+            background-color: $polimark-color-base;
+            border-top-left-radius: 18px;
+            border-bottom-left-radius: 18px;
+        }
+
+        &:nth-child(even) {
+            .call-to-action-two__button {
+                .thm-btn {
+                    background-color: $polimark-color-background-primary;
+                    color: #fff;
+
+                    &:hover {
+                        background-color: #fff;
+                        color: $polimark-color-black;
+
+                        >i {
+                            background-color: $polimark-color-black;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        mix-blend-mode: luminosity;
+        opacity: 0.1;
+    }
+
+    &__title {
+        position: relative;
+        margin: 0;
+        color: #fff;
+        font-size: 40px;
+        font-weight: 800;
+        margin-bottom: 40px;
+
+        br {
+            display: none;
+
+            @media(min-width: 1200px) {
+                display: inherit;
+            }
+        }
+
+        @media(min-width: 1200px) {
+            font-size: 50px;
+        }
+    }
+
+    &__button {
+        position: relative;
+
+        .thm-btn:hover {
+            background-color: #fff;
+            color: $polimark-color-black;
+
+            >i {
+                background-color: $polimark-color-black;
+                color: #fff;
+            }
+        }
+    }
+}
+
+
+.need-help {
+    padding: 40px;
+    padding-bottom: 33px;
+    padding-top: 35px;
+    border-radius: 18px;
+    background-color: $polimark-color-background;
+
+    &__title {
+        margin: 0;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 800;
+    }
+
+    &__text {
+        margin: 0;
+        font-size: 18px;
+        line-height: 34px;
+        color: #afb0d3;
+        font-weight: 500;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    &__phone {
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+        color: #fff;
+        font-weight: 500;
+
+        i {
+            font-size: 24px;
+            color: $polimark-color-base;
+            margin-right: 12px;
+        }
+
+    }
+
+}

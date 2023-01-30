@@ -1,0 +1,350 @@
+.slider-one {
+    background-color: $polimark-color-background-primary;
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-blend-mode: overlay;
+
+    &__bg {
+        background-color: $polimark-color-background-primary;
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        background-blend-mode: overlay;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+    }
+
+    .container {
+        position: relative;
+    }
+
+    .row {
+        --bs-gutter-y: 0;
+    }
+
+    &__content {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        position: relative;
+        z-index: 10;
+
+        @media(min-width: 1200px) {
+            padding-top: 160px;
+            padding-bottom: 160px;
+        }
+    }
+
+    &__image {
+        display: none;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        transform: translateX(47%);
+
+        &::before {
+            content: '';
+            width: 658px;
+            height: 658px;
+            background-color: $polimark-color-base;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-90%);
+        }
+
+        img {
+            position: relative;
+        }
+
+        &__name {
+            color: #fff;
+            font-family: $polimark-font-two;
+            position: absolute;
+            left: 45%;
+            top: 100px;
+            font-size: 50px;
+            text-align: right;
+            display: none;
+
+            @media(min-width:1200px) {
+                display: block;
+            }
+        }
+
+
+        @media(min-width:992px) {
+            display: block;
+        }
+    }
+
+    &__sub-title {
+        margin: 0;
+        color: $polimark-color-base;
+        font-size: 30px;
+        font-weight: 800;
+
+        @media(min-width: 1200px) {
+            font-size: 36px;
+        }
+
+        br {
+            display: none;
+
+            @media(min-width: 768px) {
+                display: inherit;
+            }
+        }
+    }
+
+    &__title {
+        margin: 0;
+        font-size: 60px;
+        line-height: 60px;
+        color: #fff;
+        font-weight: 800;
+
+        @media(min-width: 1200px) {
+            font-size: 90px;
+            line-height: 90px;
+        }
+
+        br {
+            display: none;
+
+            @media(min-width: 768px) {
+                display: inherit;
+            }
+        }
+    }
+
+    &__summery {
+        font-size: 20px;
+        line-height: 1.5em;
+        color: #fff;
+        font-weight: 500;
+        margin: 0;
+        margin-top: 35px;
+        margin-bottom: 50px;
+
+        @media(min-width: 1200px) {
+            font-size: 24px;
+        }
+
+        br {
+            display: none;
+
+            @media(min-width: 768px) {
+                display: inherit;
+            }
+        }
+    }
+
+    &__form {
+        &__inputs {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 10px;
+            margin-bottom: 10px;
+
+            @media(min-width: 768px) {
+                grid-template-columns: 356px 166px;
+            }
+
+            input[type=text],
+            input[type=email] {
+                border-radius: $polimark-border-radius;
+                background-color: #fff;
+                color: $polimark-color-text;
+                font-size: 16px;
+                font-weight: 500;
+                border: none;
+                outline: none;
+                padding-left: 30px;
+                padding-right: 30px;
+                height: 60px;
+                font-family: $polimark-font;
+
+                ::placeholder {
+                    opacity: 1;
+                    color: $polimark-color-text;
+                    font-weight: 500;
+                }
+
+                @media(min-width: 1200px) {
+                    height: 70px;
+                }
+            }
+
+        }
+
+        .thm-btn {
+            padding-top: 17px;
+            padding-bottom: 17px;
+
+            &:hover {
+                background-color: $polimark-color-black;
+                color: #fff;
+            }
+        }
+    }
+}
+
+
+.slider-two {
+    // height 950px
+
+    overflow: hidden;
+    position: relative;
+
+    .swiper-slide {
+        position: relative;
+        background-color: $polimark-color-black;
+    }
+
+    .image-layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: scale(1);
+        transition: transform 7000ms ease;
+    }
+
+    .container {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        text-align: center;
+
+        @media(min-width: 1200px) {
+            padding-top: 345px;
+            padding-bottom: 221px;
+        }
+    }
+
+    &__sub__title {
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 800;
+        letter-spacing: .2em;
+        color: #fff;
+        opacity: 0;
+        transform: translateY(-120px);
+        transition-delay: 0;
+        transition: transform 2000ms ease, opacity 2000ms ease;
+
+        @media(min-width:768px) {
+            font-size: 20px;
+        }
+    }
+
+    &__title {
+        margin: 0;
+        font-size: 60px;
+        line-height: 60px;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 800;
+        margin-top: 20px;
+        margin-bottom: 55px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(90px);
+        transition-delay: 1000ms;
+        transition: transform 2000ms ease, opacity 2000ms ease;
+
+        @media(min-width: 768px) {
+            font-size: 80px;
+            line-height: 80px;
+        }
+
+        @media(min-width: 992px) {
+            font-size: 100px;
+            line-height: 100px;
+            margin-bottom: 70px;
+        }
+
+        br {
+            display: none;
+
+            @media(min-width: 768px) {
+                display: inherit;
+            }
+        }
+    }
+
+    .thm-btn {
+        padding-top: 17px;
+        padding-bottom: 17px;
+        opacity: 0;
+        transform: translateY(100px);
+        transition-delay: 2500ms;
+        transition: transform 2000ms ease, opacity 2000ms ease, color 500ms ease,
+            background 500ms ease;
+    }
+
+    .swiper-slide-active {
+        .image-layer {
+            transform: scale(1.15);
+        }
+
+        .thm-btn,
+        .slider-two__sub__title,
+        .slider-two__title {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0) translateX(0);
+        }
+    }
+}
+
+
+#main-slider-pagination {
+    z-index: 10;
+    bottom: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 60px;
+    width: 100%;
+    max-width: 1170px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    @media (max-width: 1199px) {
+        max-width: 960px;
+        transform: translate(-50%, calc(-50% + 40px));
+    }
+
+    @media (max-width: 575px) {
+        display: none;
+    }
+
+    .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        opacity: 0.4;
+        background-color: #fff;
+        margin: 0;
+
+        +.swiper-pagination-bullet {
+            margin-left: 7px;
+        }
+
+        &.swiper-pagination-bullet-active {
+            opacity: 1;
+        }
+    }
+}

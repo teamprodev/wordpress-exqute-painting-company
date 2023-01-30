@@ -1,0 +1,408 @@
+.contact-one {
+    .container {
+        @media(min-width: 1200px) {
+            max-width: 770px;
+        }
+    }
+}
+
+.contact-info {
+    background-color: $polimark-color-gray;
+    border-radius: $polimark-border-radius;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 55px;
+
+    &__text {
+        margin: 0;
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 600;
+        color: $polimark-color-text;
+
+        a {
+            color: inherit;
+            transition: all 500ms ease;
+
+            &:hover {
+                color: $polimark-color-base;
+            }
+        }
+    }
+
+    &__icon {
+        width: 100px;
+        height: 100px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        transition: all 500ms ease;
+
+        @media(min-width: 992px) {
+            width: 133px;
+            height: 133px;
+        }
+
+        i {
+            font-size: 45px;
+            color: $polimark-color-base;
+            transition: all 500ms ease;
+
+            @media(min-width: 992px) {
+                font-size: 64px;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 24px;
+        color: $polimark-color-black;
+        font-weight: 800;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    &:hover &__icon {
+        background-color: $polimark-color-base;
+
+        i {
+            color: #fff;
+        }
+    }
+
+}
+
+
+.contact-one__form {
+    margin-top: 50px;
+
+    .row {
+        --bs-gutter-x: 18px;
+        --bs-gutter-y: 18px;
+    }
+
+    input[type=text],
+    input[type=email],
+    textarea {
+        display: block;
+        width: 100%;
+        border: none;
+        outline: none;
+        height: 70px;
+        font-size: 18px;
+        font-weight: 500;
+        color: $polimark-color-text;
+        border-radius: $polimark-border-radius;
+        border: 1px solid $polimark-color-border;
+        font-family: $polimark-font;
+        padding-left: 23px;
+    }
+
+    textarea {
+        padding-top: 15px;
+        height: 192px;
+    }
+
+    ::placeholder {
+        opacity: 1;
+        font-weight: 500;
+        color: $polimark-color-text;
+    }
+}
+
+
+.volunteer-one {
+    overflow: hidden;
+
+    .block-heading {
+        margin-bottom: 40px;
+    }
+
+    & &__image {
+        position: relative;
+        display: block;
+
+        @media(min-width: 768px) {
+            margin-bottom: 22px;
+        }
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: calc(100% - 22px);
+            top: 44px;
+            left: 22px;
+            border-radius: 12px;
+            border: 6px solid $polimark-color-base;
+            z-index: -1;
+            display: none;
+
+            @media(min-width: 768px) {
+                width: 490px;
+                display: block;
+            }
+        }
+
+        img {
+            border-radius: 12px;
+
+            @media(min-width: 768px) {
+                max-width: none;
+            }
+        }
+    }
+
+    &__form {
+        @media(min-width: 1200px) {
+            padding-right: 70px;
+        }
+
+        .row {
+            --bs-gutter-x: 18px;
+            --bs-gutter-y: 18px;
+        }
+
+        input[type=text],
+        input[type=email],
+        textarea {
+            display: block;
+            width: 100%;
+            border: none;
+            outline: none;
+            height: 70px;
+            font-size: 18px;
+            font-weight: 500;
+            color: $polimark-color-text;
+            border-radius: $polimark-border-radius;
+            border: 1px solid $polimark-color-border;
+            font-family: $polimark-font;
+            padding-left: 23px;
+        }
+
+        textarea {
+            padding-top: 15px;
+            height: 192px;
+        }
+
+        ::placeholder {
+            opacity: 1;
+            font-weight: 500;
+            color: $polimark-color-text;
+        }
+
+        .thm-btn {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .form-label-text {
+            font-size: 18px;
+            font-weight: 800;
+            color: $polimark-color-black;
+            margin-top: 31px;
+            margin-bottom: 22px;
+        }
+
+        .wpcf7-checkbox {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-row-gap: 10px;
+            margin-bottom: 35px;
+
+            @media(min-width: 768px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .wpcf7-list-item {
+                margin: 0;
+                position: relative;
+
+                input[type=checkbox] {
+                    display: none;
+                }
+
+
+                .wpcf7-list-item-label {
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    padding-left: 31px;
+                    font-size: 18px;
+                    color: $polimark-color-text;
+                    font-weight: 500;
+                    cursor: pointer;
+
+                    &::before {
+                        content: '';
+                        width: 21px;
+                        height: 21px;
+                        border-radius: 50%;
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                        border: 1px solid $polimark-color-border;
+                        transition: all 500ms ease;
+                        font-size: 12px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        color: #fff;
+                        transform: translateY(-50%);
+                    }
+                }
+
+                input[type=checkbox]:checked+.wpcf7-list-item-label::before {
+                    background-color: $polimark-color-base;
+                    border-color: $polimark-color-base;
+                    content: '\f00c';
+                }
+            }
+        }
+    }
+}
+
+#give-login-form div.give-login,
+#give-login-form legend,
+#give-register-form div.give-login,
+#give-register-form legend {
+    margin-bottom: 0;
+}
+
+#give-login-form {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 80px;
+    padding-bottom: 70px;
+
+    legend {
+        font-size: 40px;
+        font-weight: 800;
+        color: $polimark-color-black;
+        margin: 0;
+        border-bottom: 0;
+    }
+
+    label {
+        font-size: 18px;
+        font-weight: 500;
+        color: $polimark-color-text;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    input[type=password],
+    input[type=text] {
+        width: 100%;
+        display: block;
+        height: 70px;
+        border-radius: $polimark-border-radius;
+        padding-left: 30px;
+        padding-right: 30px;
+        border: none;
+        outline: none;
+        border: 1px solid $polimark-color-border;
+        margin-bottom: 15px;
+        font-family: $polimark-font;
+    }
+
+
+    .give-login-submit {
+
+        border: none;
+        outline: none;
+        text-decoration: none;
+        color: #ffffff;
+        background-color: $polimark-color-base;
+        border-radius: $polimark-border-radius;
+        padding: 12px;
+        /* padding-left: 39px; */
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 800;
+        color: #fff;
+        display: inline-flex;
+        align-items: center;
+        justify-content: flex-end;
+        transition: all 500ms ease;
+        position: relative;
+        width: 140px;
+        margin-top: 10px;
+
+        transition: all 500ms ease;
+
+        &:hover {
+            background-color: $polimark-color-black;
+        }
+
+        input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            border: none;
+            font-family: $polimark-font;
+            outline: none;
+            background-color: transparent;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: 800;
+            padding: 0 22px;
+            width: 100%;
+            height: 100%;
+            text-align: left;
+        }
+
+
+        &::after {
+            content: "\f105";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 36px;
+            height: 36px;
+            background-color: #fff;
+            font-size: 18px;
+            text-align: center;
+            border-radius: $polimark-border-radius;
+            color: $polimark-color-black;
+        }
+    }
+
+    .give-lost-password {
+
+        margin-top: 10px;
+
+        a {
+            color: $polimark-color-primary;
+            font-size: 18px;
+            font-weight: 500;
+            transition: all 500ms ease;
+
+            &:hover {
+                color: $polimark-color-base;
+            }
+
+        }
+    }
+}

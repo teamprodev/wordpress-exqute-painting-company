@@ -1,0 +1,490 @@
+.donation-form-one {
+    .inner-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: $polimark-color-base;
+        border-top-left-radius: 18px;
+        border-top-right-radius: 18px;
+        padding: 30px;
+        padding-top: 20px;
+
+        @media(min-width: 992px) {
+            flex-direction: row;
+            justify-content: space-between;
+            text-align: left;
+            padding-top: 67px;
+            padding-bottom: 67px;
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+    }
+
+    &__title {
+        margin: 0;
+        color: #fff;
+        font-size: 30px;
+        font-weight: 800;
+
+        @media(min-width: 992px) {
+            font-size: 40px;
+        }
+
+        br {
+            display: none;
+
+            @media(min-width: 992px) {
+                display: inherit;
+            }
+        }
+    }
+
+    &__form {
+        text-align: left;
+        width: 100%;
+        margin-top: 30px;
+
+        @media(min-width: 992px) {
+            margin-top: 0;
+            width: 60%;
+        }
+
+        .give-form {
+            display: grid;
+            grid-template-columns: 1fr;
+            width: 100%;
+            margin-bottom: 0;
+
+            @media(min-width: 992px) {
+                justify-content: flex-end;
+                grid-template-columns: 400px auto;
+            }
+
+            .give-donation-amount {
+                display: flex;
+                align-items: center;
+                flex-direction: row-reverse;
+                background-color: #fff;
+                padding-left: 30px;
+                padding-right: 25px;
+                border-radius: $polimark-border-radius;
+                height: 70px;
+
+
+                @media(min-width: 992px) {
+                    margin-bottom: 0;
+                }
+
+                .give-amount-top {
+                    background-color: transparent !important;
+                    border: none !important;
+                    outline: none;
+                    font-size: 16px !important;
+                    color: $polimark-color-text !important;
+                    font-weight: 500 !important;
+                    font-family: $polimark-font !important;
+                    padding: 0 !important;
+                    width: 100%;
+                }
+
+                .give-currency-symbol {
+                    font-size: 20px !important;
+                    color: $polimark-color-text !important;
+                    font-weight: 500 !important;
+                    border: none !important;
+                    outline: none;
+                    padding: 0;
+                    background-color: transparent;
+                }
+            }
+
+        }
+
+        .give-btn {
+
+            border: none;
+            outline: none;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: $polimark-color-black;
+            border-radius: $polimark-border-radius;
+            padding: 17px;
+            padding-left: 39px;
+
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: 800;
+            color: #fff;
+            font-family: $polimark-font;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 500ms ease;
+            width: 199px;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            margin-bottom: 0 !important;
+            transition: all 500ms ease;
+
+            &::after {
+                content: '\f105';
+                font-weight: 900;
+                font-family: "Font Awesome 5 Free";
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 36px;
+                height: 36px;
+                background-color: #fff;
+                font-size: 18px;
+                text-align: center;
+                border-radius: $polimark-border-radius;
+                color: $polimark-color-black;
+                margin-left: 30px;
+            }
+
+            &:hover {
+                background-color: #fff;
+                color: $polimark-color-black;
+
+                &::after {
+                    background-color: $polimark-color-black;
+                    color: #fff;
+                }
+            }
+
+            @media(min-width: 992px) {
+                margin-left: 10px !important;
+            }
+        }
+
+
+
+        .give-custom-amount-text,
+        .give-donation-levels-wrap,
+        #give_error_test_mode {
+            display: none !important;
+        }
+    }
+}
+
+#give-recurring-form h3.give-section-break,
+#give-recurring-form h4.give-section-break,
+#give-recurring-form legend,
+form.give-form h3.give-section-break,
+form.give-form h4.give-section-break,
+form.give-form legend,
+form[id*="give-form"] h3.give-section-break,
+form[id*="give-form"] h4.give-section-break,
+form[id*="give-form"] legend,
+.give-modal form[id*="give-form"] .give-payment-mode-label {
+    color: $polimark-color-black;
+}
+
+#give-recurring-form .form-row label,
+form.give-form .form-row label,
+form[id*="give-form"] .form-row label {
+    font-size: 18px;
+    font-weight: 500;
+    color: $polimark-color-text;
+}
+
+#give-recurring-form .form-row .give-input-field-wrapper,
+#give-recurring-form .form-row input[type="email"],
+#give-recurring-form .form-row input[type="password"],
+#give-recurring-form .form-row input[type="tel"],
+#give-recurring-form .form-row input[type="text"],
+#give-recurring-form .form-row input[type="url"],
+#give-recurring-form .form-row select,
+#give-recurring-form .form-row textarea,
+form.give-form .form-row .give-input-field-wrapper,
+form.give-form .form-row input[type="email"],
+form.give-form .form-row input[type="password"],
+form.give-form .form-row input[type="tel"],
+form.give-form .form-row input[type="text"],
+form.give-form .form-row input[type="url"],
+form.give-form .form-row select,
+form.give-form .form-row textarea,
+form[id*="give-form"] .form-row .give-input-field-wrapper,
+form[id*="give-form"] .form-row input[type="email"],
+form[id*="give-form"] .form-row input[type="password"],
+form[id*="give-form"] .form-row input[type="tel"],
+form[id*="give-form"] .form-row input[type="text"],
+form[id*="give-form"] .form-row input[type="url"],
+form[id*="give-form"] .form-row select,
+form[id*="give-form"] .form-row textarea {
+    border-color: $polimark-color-border;
+    border-radius: $polimark-border-radius;
+    font-family: $polimark-font;
+    font-weight: 500;
+    font-size: 16px;
+    color: $polimark-color-text !important;
+    height: 70px;
+    padding-left: 30px;
+
+
+    &::placeholder {
+        opacity: 1;
+        color: $polimark-color-text;
+    }
+}
+
+#give-recurring-form .form-row textarea,
+form.give-form .form-row textarea,
+form[id*="give-form"] .form-row textarea {
+    height: 150px;
+    padding-top: 15px;
+}
+
+#give-purchase-button {
+
+    border: none;
+    outline: none;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: $polimark-color-black;
+    border-radius: $polimark-border-radius;
+    padding: 17px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 800;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: all 500ms ease;
+    transition: all 500ms ease;
+
+
+    &:hover {
+        color: #fff;
+        background-color: $polimark-color-base;
+    }
+}
+
+form[id*="give-form"] #give-final-total-wrap .give-donation-total-label {
+    background-color: $polimark-color-gray;
+    color: $polimark-color-text;
+    font-weight: 500;
+    font-size: 18px;
+    border-color: $polimark-color-border;
+}
+
+form[id*="give-form"] #give-final-total-wrap .give-final-total-amount {
+    border-color: $polimark-color-border;
+    color: $polimark-color-text;
+}
+
+#give_offline_payment_info {
+    ol {
+        margin-left: 0;
+    }
+}
+
+
+.donation-form-two {
+    &__gallery {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        margin-bottom: 50px;
+
+        @media(min-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        & img {
+            width: 100% !important;
+            border-radius: 18px !important;
+        }
+    }
+
+    .block-heading {
+        margin-bottom: 30px;
+    }
+
+    &__form {
+        max-width: 800px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+
+        .give_error,
+        .give_success,
+        .give_warning {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .give-form {
+
+            .give-donation-amount {
+                display: flex;
+                align-items: center;
+                flex-direction: row-reverse;
+                background-color: #fff;
+                border: 1px solid $polimark-color-border;
+                padding-left: 30px;
+                padding-right: 25px;
+                border-radius: $polimark-border-radius;
+                height: 70px;
+                margin-bottom: 20px;
+
+
+                @media(min-width: 992px) {
+                    margin-bottom: 0;
+                }
+
+                .give-amount-top {
+                    background-color: transparent !important;
+                    border: none !important;
+                    outline: none;
+                    font-size: 18px !important;
+                    color: $polimark-color-text !important;
+                    font-weight: 500 !important;
+                    font-family: $polimark-font !important;
+                    padding: 0 !important;
+                    width: 100%;
+                }
+
+                .give-currency-symbol {
+                    font-size: 20px !important;
+                    color: $polimark-color-text !important;
+                    font-weight: 500 !important;
+                    border: none !important;
+                    outline: none;
+                    padding: 0;
+                    background-color: transparent;
+                }
+            }
+
+            .give-donation-levels-wrap {
+
+                &::before,
+                &::after {
+                    display: none !important;
+                }
+
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 20px;
+                margin: 0 !important;
+                margin-top: 20px !important;
+                margin-bottom: 40px !important;
+
+                @media(min-width: 768px) {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+
+                >li {
+                    margin: 0 !important;
+
+                    button {
+                        width: 100%;
+                        height: 60px;
+                        background-color: $polimark-color-primary;
+                        color: #fff;
+                        font-size: 18px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        border: none;
+                        outline: none;
+                        transition: all 500ms ease;
+                        border-radius: $polimark-border-radius;
+                        font-weight: 600;
+
+                        &.give-default-level,
+                        &:hover {
+                            background-color: $polimark-color-black;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+
+            .give-submit-button-wrap {
+
+                border: none;
+                outline: none;
+                text-decoration: none;
+                color: #ffffff;
+                background-color: var(--polimark-color-base, #f5381f);
+                border-radius: var(--polimark-border-radius, 8px);
+                padding: 12px;
+                /* padding-left: 39px; */
+                text-transform: uppercase;
+                font-size: 18px;
+                font-weight: 800;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                transition: all 500ms ease;
+                position: relative;
+                max-width: 265px;
+
+                input {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    border: none;
+                    font-family: var(--polimark-font, "Barlow", sans-serif);
+                    outline: none;
+                    background-color: transparent !important;
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-size: 18px !important;
+                    font-weight: 800;
+                    padding: 0 22px;
+                    width: 100%;
+                    height: 100%;
+                    text-align: left;
+                }
+
+
+                &::after {
+                    content: "\f105" !important;
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 900;
+                    display: flex !important;
+                    justify-content: center;
+                    align-items: center;
+                    width: 36px;
+                    height: 36px;
+                    background-color: #fff;
+                    font-size: 18px;
+                    text-align: center;
+                    border-radius: var(--polimark-border-radius, 8px);
+                    color: var(--polimark-color-black, #11134f);
+                }
+
+                &:hover {
+                    background-color: $polimark-color-background-primary;
+                    color: #fff;
+                }
+            }
+        }
+
+        #give-recurring-form h3.give-section-break,
+        #give-recurring-form h4.give-section-break,
+        #give-recurring-form legend,
+        form.give-form h3.give-section-break,
+        form.give-form h4.give-section-break,
+        form.give-form legend,
+        form[id*="give-form"] h3.give-section-break,
+        form[id*="give-form"] h4.give-section-break,
+        form[id*="give-form"] legend {
+            padding-bottom: 15px;
+        }
+    }
+}

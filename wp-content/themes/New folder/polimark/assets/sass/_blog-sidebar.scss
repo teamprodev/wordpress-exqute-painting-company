@@ -1,0 +1,513 @@
+.blog-sidebar {
+    margin-top: 50px;
+}
+
+@media(min-width: 992px) {
+    .blog-sidebar {
+        margin-top: 0;
+    }
+}
+
+.blog-sidebar .widget {
+    background-color: $polimark-color-gray;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: $polimark-border-radius;
+}
+
+.blog-sidebar .widget:last-child {
+    margin-bottom: 0;
+}
+
+.blog-sidebar .widget-title {
+    margin: 0;
+    color: $polimark-color-black;
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: -5px;
+    margin-bottom: 25px;
+}
+
+.blog-sidebar .widget-title a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.blog-sidebar .widget select {
+    width: 100%;
+    height: 60px;
+    border-radius: $polimark-border-radius;
+    background-color: #fff;
+    border: 1px solid $polimark-color-border;
+    outline: none;
+    color: $polimark-color-text;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 30px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    font-family: $polimark-font;
+    background-image: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><path fill="currentColor" d="M540.1 776.847l472.32-473.63c15.466-15.518 15.44-40.642-0.080-56.134-15.518-15.48-40.656-15.44-56.134 0.080l-444.208 445.438-444.206-445.454c-15.48-15.518-40.602-15.558-56.122-0.080-7.78 7.766-11.67 17.94-11.67 28.114 0 10.148 3.864 20.282 11.59 28.034l472.308 473.632c7.436 7.474 17.556 11.668 28.1 11.668s20.652-4.206 28.102-11.668z"></path></svg>');
+    background-repeat: no-repeat;
+    background-position: right 30px top 50%;
+    background-size: .65em auto;
+}
+
+
+.blog-sidebar .widget ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.blog-sidebar .widget_archive select {
+    margin-bottom: 10px;
+}
+
+.blog-sidebar .widget_categories ul li,
+.blog-sidebar .widget_meta ul li,
+.blog-sidebar .widget_nav_menu ul li,
+.blog-sidebar .widget_pages ul li,
+.blog-sidebar .widget_archive ul li {
+    font-size: 16px;
+    color: $polimark-color-text;
+    font-weight: 500;
+    position: relative;
+    transition: all 500ms ease;
+}
+
+.blog-sidebar .widget_categories ul li a:hover,
+.blog-sidebar .widget_meta ul li a:hover,
+.blog-sidebar .widget_nav_menu ul li a:hover,
+.blog-sidebar .widget_pages ul li a:hover,
+.blog-sidebar .widget_archive ul li a:hover {
+    color: $polimark-color-black;
+    text-shadow: 0 0 1px currentColor;
+}
+
+.blog-sidebar .widget_categories,
+.blog-sidebar .widget_pages,
+.blog-sidebar .widget_nav_menu,
+.blog-sidebar .widget_meta,
+.blog-sidebar .widget_archive {
+    padding-top: 35px;
+    padding-bottom: 30px;
+}
+
+.blog-sidebar .widget_categories ul,
+.blog-sidebar .widget_pages ul,
+.blog-sidebar .widget_nav_menu ul,
+.blog-sidebar .widget_meta ul,
+.blog-sidebar .widget_archive ul {
+    margin-top: -17px;
+}
+
+.blog-sidebar .widget_categories ul li::before,
+.blog-sidebar .widget_pages ul li::before,
+.blog-sidebar .widget_nav_menu ul li::before,
+.blog-sidebar .widget_meta ul li::before,
+.blog-sidebar .widget_archive ul li::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f105';
+    position: absolute;
+    top: -1px;
+    right: 0;
+}
+
+.blog-sidebar .widget_categories ul li+li,
+.blog-sidebar .widget_pages ul li+li,
+.blog-sidebar .widget_nav_menu ul li+li,
+.blog-sidebar .widget_meta ul li+li,
+.blog-sidebar .widget_archive ul li+li {
+    margin-top: 7px;
+}
+
+.blog-sidebar .widget_categories ul li a,
+.blog-sidebar .widget_pages ul li a,
+.blog-sidebar .widget_meta ul li a,
+.blog-sidebar .widget_nav_menu ul li a,
+.blog-sidebar .widget_archive ul li a {
+    color: inherit;
+    text-decoration: none;
+    transition: all 500ms ease;
+}
+
+.blog-sidebar .widget_calendar {
+    padding-bottom: 30px;
+}
+
+.blog-sidebar .calendar_wrap {
+    margin-top: -5px;
+}
+
+.blog-sidebar .calendar_wrap .wp-calendar-table {
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: $polimark-border-radius;
+    margin-bottom: 0;
+}
+
+.blog-sidebar .calendar_wrap .wp-calendar-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog-sidebar .calendar_wrap .wp-calendar-nav [class*=wp-calendar-nav-] {
+    line-height: 1;
+    color: $polimark-color-black;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.blog-sidebar .calendar_wrap .wp-calendar-nav [class*=wp-calendar-nav-] a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.blog-sidebar .calendar_wrap .wp-calendar-table thead {
+    background-color: $polimark-color-primary;
+}
+
+.blog-sidebar .calendar_wrap .wp-calendar-table thead th {
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.blog-sidebar .calendar_wrap .wp-calendar-table tbody td {
+    text-align: center;
+    line-height: 33px;
+    font-size: 16px;
+    font-weight: 500;
+    color: $polimark-color-text;
+}
+
+.blog-sidebar .calendar_wrap .wp-calendar-table tbody td a {
+    color: $polimark-color-black;
+    text-shadow: 0 0 1px currentColor;
+    text-decoration: none;
+}
+
+.blog-sidebar .calendar_wrap .wp-calendar-table caption {
+    font-weight: 600;
+    text-align: center;
+    color: $polimark-color-black;
+    font-size: 18px;
+    line-height: 1;
+    margin-top: 10px;
+}
+
+.blog-sidebar .widget_pages ul li ul,
+.blog-sidebar .widget_nav_menu ul li ul,
+.blog-sidebar .widget_categories ul li ul {
+    padding-left: .5em;
+    margin-top: 7px;
+}
+
+.blog-sidebar .widget_categories select {
+    margin-bottom: 10px;
+}
+
+.blog-sidebar .widget_tag_cloud .tagcloud {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+
+.blog-sidebar .widget_tag_cloud .tagcloud a {
+    font-size: 12px !important;
+    font-weight: 800;
+    margin-left: 10px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    border-radius: $polimark-border-radius;
+    color: $polimark-color-text;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    border: 1px solid $polimark-color-border;
+    transition: all 500ms ease;
+}
+
+.blog-sidebar .widget_tag_cloud .tagcloud a:hover {
+    border-color: $polimark-color-base;
+    background-color: $polimark-color-base;
+    color: #ffffff;
+}
+
+
+.blog-sidebar .widget p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-bottom: 15px;
+}
+
+.blog-sidebar .widget strong {
+    color: $polimark-color-black;
+}
+
+.blog-sidebar .widget .searchform {
+    position: relative;
+    margin-top: -5px;
+}
+
+.blog-sidebar .widget .searchform input[type=text] {
+    width: 100%;
+    height: 60px;
+    border-radius: $polimark-border-radius;
+    color: $polimark-color-text;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid $polimark-color-border;
+    outline: none;
+    padding-left: 30px;
+    font-family: $polimark-font;
+}
+
+.blog-sidebar .widget .searchform ::placeholder {
+    color: inherit;
+    opacity: 1;
+}
+
+.blog-sidebar .widget .searchform button[type=submit] {
+    width: auto;
+    height: auto;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0);
+    color: $polimark-color-base;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+    border: none;
+    outline: none;
+}
+
+.blog-sidebar .widget_recent_entries ul,
+.blog-sidebar .widget_recent_comments ul {
+    margin-top: -10px;
+}
+
+.blog-sidebar .widget_recent_entries ul li,
+.blog-sidebar .widget_recent_comments ul li {
+    position: relative;
+    padding-left: 64px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+    color: $polimark-color-text;
+}
+
+.blog-sidebar .widget_recent_entries ul li+li,
+.blog-sidebar .widget_recent_comments ul li+li {
+    margin-top: 20px;
+}
+
+.blog-sidebar .widget_recent_comments ul li::before {
+    content: '\f075';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: $polimark-color-primary;
+    font-size: 16px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    transition: all 500ms ease;
+}
+
+.blog-sidebar .widget_recent_entries ul li:hover::before,
+.blog-sidebar .widget_recent_comments ul li:hover::before {
+    background-color: $polimark-color-base;
+}
+
+.blog-sidebar .widget_recent_entries ul li a,
+.blog-sidebar .widget_recent_comments ul li a {
+    color: inherit;
+    text-decoration: none;
+    transition: all 500ms ease;
+}
+
+.blog-sidebar .widget_recent_comments ul li a:hover {
+    color: $polimark-color-base;
+}
+
+
+.blog-sidebar .widget_recent_entries ul li {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+}
+
+
+.blog-sidebar .widget_recent_entries ul li::before {
+    content: '\f044';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    width: 44px;
+    height: 44px;
+    background-color: $polimark-color-black;
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    transition: all 500ms ease;
+}
+
+.blog-sidebar .widget_rss ul li+li {
+    margin-top: 22px;
+}
+
+.blog-sidebar .widget_rss ul li .rsswidget {
+    display: block;
+    color: $polimark-color-black;
+    font-size: 18px;
+    line-height: 1.5em;
+    font-weight: 800;
+    text-decoration: none;
+    transition: all 500ms ease;
+}
+
+.blog-sidebar .widget_rss ul li .rsswidget:hover {
+    color: $polimark-color-base;
+}
+
+.blog-sidebar .widget_rss ul li .rss-date {
+    display: flex;
+    align-items: center;
+    color: $polimark-color-text;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 6px;
+}
+
+.blog-sidebar .widget_rss ul li .rss-date::before {
+    content: '\f017';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+    font-size: 14px;
+    color: $polimark-color-base;
+    margin-right: 10px;
+}
+
+.blog-sidebar .widget_rss ul li .rssSummary {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    color: $polimark-color-text;
+}
+
+.blog-sidebar .widget_rss ul li cite {
+    font-size: 14px;
+    font-weight: 500;
+    color: $polimark-color-black;
+}
+
+.blog-sidebar .widget_smart_recent_entries {
+    .srpw-ul {
+        margin-left: -20px;
+        margin-right: -20px;
+        margin-top: -15px;
+        margin-bottom: -15px;
+    }
+
+    .srpw-block li {
+
+
+        &::before,
+        &::after {
+            display: none !important;
+        }
+
+        padding: 0;
+        grid-gap: 20px;
+        display: grid;
+        grid-template-columns: 72px auto;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: $polimark-border-radius;
+        transition: all 500ms ease;
+
+        &:hover {
+            background-color: #fff;
+            border-color: $polimark-color-border;
+        }
+
+        .srpw-thumbnail {
+            width: 72px;
+            height: 72px;
+            border-radius: $polimark-border-radius;
+        }
+
+        .srpw-alignleft {
+            float: none;
+            margin: 0;
+        }
+
+        .srpw-content {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .srpw-title {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.5;
+            color: $polimark-color-black;
+        }
+
+        .srpw-meta {
+            display: flex;
+            align-items: center;
+            line-height: 1;
+            font-size: 14px;
+            font-weight: 600;
+            color: $polimark-color-text;
+            position: relative;
+            top: -4px;
+
+            &::before {
+                color: $polimark-color-base;
+                content: "\f017";
+                font-family: "Font Awesome 5 Free";
+                font-weight: 400;
+                margin-right: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+:root {
+    --polimark-font: 'Barlow', sans-serif;
+    --polimark-font-two: 'reeyregular', sans-serif;
+    --polimark-color-base: #f5381f;
+    --polimark-color-primary: #332e98;
+    --polimark-color-gray: #efeff7;
+    --polimark-color-black: #11134f;
+    --polimark-color-text: #797889;
+    --polimark-color-text-light: #afb0d3;
+    --polimark-color-text-lighter: #b9bbdf;
+    --polimark-color-border: #e4e4f0;
+    --polimark-color-background: #0f1149;
+    --polimark-color-background-primary: #32369a;
+    --polimark-border-radius: 8px;
+    --bs-gutter-x: 30px;
+}
+
+// scss variables
+
+$polimark-font: var(--polimark-font, 'Barlow', sans-serif);
+$polimark-font-two: var(--polimark-font-two, 'reeyregular', sans-serif);
+$polimark-color-base: var(--polimark-color-base, #f5381f);
+$polimark-color-primary: var(--polimark-color-primary, #332e98);
+$polimark-color-gray: var(--polimark-color-gray, #efeff7);
+$polimark-color-black: var(--polimark-color-black, #11134f);
+$polimark-color-text: var(--polimark-color-text, #797889);
+$polimark-color-text-light: var(--polimark-color-text-light, #afb0d3);
+$polimark-color-text-lighter: var(--polimark-color-text-lighter, #b9bbdf);
+$polimark-color-border: var(--polimark-color-border, #e4e4f0);
+$polimark-color-background: var(--polimark-color-background, #0f1149);
+$polimark-color-background-primary: var(--polimark-color-background-primary, #32369a);
+$polimark-border-radius: var(--polimark-border-radius, 8px);

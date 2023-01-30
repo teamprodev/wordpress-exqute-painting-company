@@ -1,0 +1,188 @@
+.coming-soon {
+    .inner-container {
+        border-top-right-radius: 18px;
+        border-top-left-radius: 18px;
+        background-color: $polimark-color-base;
+        padding: 40px;
+
+        @media(min-width: 1200px) {
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-top: 63px;
+            padding-bottom: 63px;
+        }
+    }
+
+    .row {
+        --bs-gutter-y: 0;
+    }
+
+    &__title {
+        margin: 0;
+        color: #fff;
+        font-size: 36px;
+        font-weight: 800;
+        margin-bottom: 5px;
+    }
+
+    &__text {
+        margin: 0;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 30px;
+
+        @media(min-width: 992px) {
+            margin-bottom: 0;
+        }
+    }
+
+    .countdown-one__list {
+        display: grid;
+        grid-gap: 10px;
+        margin: 0;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        @media(min-width: 1200px) {
+            padding-left: 32px;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        li {
+            border-radius: 8px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            padding-top: 27px;
+            padding-bottom: 27px;
+
+            span {
+                font-size: 30px;
+                font-weight: 800;
+                color: $polimark-color-black;
+                line-height: 1;
+                display: block;
+            }
+
+            i {
+                margin-top: 10px;
+                color: $polimark-color-text;
+                line-height: 1;
+                display: block;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+
+.coming-soon-two {
+    .block-heading {
+        margin-bottom: 40px;
+    }
+
+    &__content {
+        margin-bottom: 45px;
+
+        p {
+            margin: 0;
+            color: $polimark-color-text;
+            font-size: 18px;
+            line-height: 34px;
+            font-weight: 500;
+
+            +p {
+                margin-top: 35px;
+            }
+
+            strong {
+                color: $polimark-color-primary;
+                font-weight: 600;
+                font-size: 22px;
+            }
+
+        }
+    }
+
+    &__item {
+        &__title {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            font-weight: 800;
+            color: $polimark-color-black;
+            margin-bottom: 7px;
+
+            i {
+                color: $polimark-color-base;
+                font-size: 16px;
+                margin-right: 8px;
+                transform: rotate(0deg);
+                transition: transform 500ms ease;
+            }
+
+            &:hover {
+                i {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+        &__text {
+            margin: 0;
+            color: $polimark-color-text;
+            font-size: 16px;
+            line-height: 34px;
+            font-weight: 500;
+        }
+    }
+
+    &__countdown {
+        display: grid;
+        grid-gap: 12px;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0;
+        margin-top: 50px;
+
+        @media(min-width:992px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        li {
+            border: 1px solid $polimark-color-border;
+            border-radius: $polimark-border-radius;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            span {
+                color: $polimark-color-black;
+                font-size: 30px;
+                font-weight: 800;
+                line-height: 1;
+                display: block;
+                width: 100%;
+                padding-top: 40px;
+            }
+
+            i {
+                font-style: normal;
+                color: $polimark-color-text;
+                font-size: 16px;
+                font-weight: 500;
+                display: block;
+                background-color: $polimark-color-gray;
+                line-height: 47px;
+                margin-top: 40px;
+            }
+        }
+    }
+}

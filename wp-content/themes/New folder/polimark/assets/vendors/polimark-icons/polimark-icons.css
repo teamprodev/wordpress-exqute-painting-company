@@ -1,0 +1,243 @@
+@font-face {
+  font-family: 'polimark-icon';
+  src:  url('fonts/polimark-icon.eot?dhh0bn');
+  src:  url('fonts/polimark-icon.eot?dhh0bn#iefix') format('embedded-opentype'),
+    url('fonts/polimark-icon.ttf?dhh0bn') format('truetype'),
+    url('fonts/polimark-icon.woff?dhh0bn') format('woff'),
+    url('fonts/polimark-icon.svg?dhh0bn#polimark-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="polimark-icon-"], [class*=" polimark-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'polimark-icon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.polimark-icon-right-arrow-angle:before {
+  content: "\e946";
+}
+.polimark-icon-voting:before {
+  content: "\e900";
+}
+.polimark-icon-voting1:before {
+  content: "\e901";
+}
+.polimark-icon-voting2:before {
+  content: "\e902";
+}
+.polimark-icon-voting3:before {
+  content: "\e903";
+}
+.polimark-icon-Politician:before {
+  content: "\e904";
+}
+.polimark-icon-Politician1:before {
+  content: "\e905";
+}
+.polimark-icon-debate:before {
+  content: "\e906";
+}
+.polimark-icon-polling:before {
+  content: "\e907";
+}
+.polimark-icon-online-voting:before {
+  content: "\e908";
+}
+.polimark-icon-online-voting1:before {
+  content: "\e909";
+}
+.polimark-icon-candidates:before {
+  content: "\e90a";
+}
+.polimark-icon-candidates1:before {
+  content: "\e90b";
+}
+.polimark-icon-campaign:before {
+  content: "\e90c";
+}
+.polimark-icon-ID:before {
+  content: "\e90d";
+}
+.polimark-icon-voting4:before {
+  content: "\e90e";
+}
+.polimark-icon-newspaper:before {
+  content: "\e90f";
+}
+.polimark-icon-election2:before {
+  content: "\e910";
+}
+.polimark-icon-debate2:before {
+  content: "\e911";
+}
+.polimark-icon-voting5:before {
+  content: "\e912";
+}
+.polimark-icon-polling1:before {
+  content: "\e913";
+}
+.polimark-icon-voting6:before {
+  content: "\e914";
+}
+.polimark-icon-chart:before {
+  content: "\e915";
+}
+.polimark-icon-raise-hand:before {
+  content: "\e916";
+}
+.polimark-icon-handshake:before {
+  content: "\e917";
+}
+.polimark-icon-voting7:before {
+  content: "\e918";
+}
+.polimark-icon-online-voting2:before {
+  content: "\e919";
+}
+.polimark-icon-politics:before {
+  content: "\e91a";
+}
+.polimark-icon-debate1:before {
+  content: "\e91b";
+}
+.polimark-icon-results:before {
+  content: "\e91c";
+}
+.polimark-icon-election:before {
+  content: "\e91d";
+}
+.polimark-icon-feedback:before {
+  content: "\e91e";
+}
+.polimark-icon-voting8:before {
+  content: "\e91f";
+}
+.polimark-icon-election1:before {
+  content: "\e920";
+}
+.polimark-icon-ballot-box:before {
+  content: "\e921";
+}
+.polimark-icon-vote:before {
+  content: "\e922";
+}
+.polimark-icon-medal:before {
+  content: "\e923";
+}
+.polimark-icon-protest:before {
+  content: "\e924";
+}
+.polimark-icon-protest1:before {
+  content: "\e925";
+}
+.polimark-icon-Politician2:before {
+  content: "\e926";
+}
+.polimark-icon-Politician3:before {
+  content: "\e927";
+}
+.polimark-icon-government:before {
+  content: "\e928";
+}
+.polimark-icon-voting9:before {
+  content: "\e929";
+}
+.polimark-icon-online-voting3:before {
+  content: "\e92a";
+}
+.polimark-icon-republic:before {
+  content: "\e92b";
+}
+.polimark-icon-supporter:before {
+  content: "\e92c";
+}
+.polimark-icon-supporter1:before {
+  content: "\e92d";
+}
+.polimark-icon-scale:before {
+  content: "\e92e";
+}
+.polimark-icon-ballot:before {
+  content: "\e92f";
+}
+.polimark-icon-winning:before {
+  content: "\e930";
+}
+.polimark-icon-winning1:before {
+  content: "\e931";
+}
+.polimark-icon-email:before {
+  content: "\e932";
+}
+.polimark-icon-pin:before {
+  content: "\e933";
+}
+.polimark-icon-telephone:before {
+  content: "\e934";
+}
+.polimark-icon-magnifying-glass:before {
+  content: "\e935";
+}
+.polimark-icon-avatar:before {
+  content: "\e936";
+}
+.polimark-icon-confirmation:before {
+  content: "\e937";
+}
+.polimark-icon-sprout:before {
+  content: "\e938";
+}
+.polimark-icon-charity:before {
+  content: "\e939";
+}
+.polimark-icon-idea:before {
+  content: "\e93a";
+}
+.polimark-icon-mortarboard:before {
+  content: "\e93b";
+}
+.polimark-icon-bundestag:before {
+  content: "\e93c";
+}
+.polimark-icon-politician:before {
+  content: "\e93d";
+}
+.polimark-icon-handshake1:before {
+  content: "\e93e";
+}
+.polimark-icon-voting10:before {
+  content: "\e93f";
+}
+.polimark-icon-voting-1:before {
+  content: "\e940";
+}
+.polimark-icon-peace:before {
+  content: "\e941";
+}
+.polimark-icon-civil-right:before {
+  content: "\e942";
+}
+.polimark-icon-place:before {
+  content: "\e943";
+}
+.polimark-icon-phone-ringing:before {
+  content: "\e944";
+}
+.polimark-icon-envelope:before {
+  content: "\e945";
+}
+.polimark-icon-tick:before {
+  content: "\e947";
+}

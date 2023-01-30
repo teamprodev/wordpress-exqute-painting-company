@@ -1,0 +1,118 @@
+.twitter-one {
+    background-color: $polimark-color-gray;
+    padding-bottom: 55px;
+
+    @media(min-width: 992px) {
+        padding-bottom: 95px;
+    }
+
+    .container {
+        position: relative;
+    }
+
+    &__icon {
+        background-color: $polimark-color-primary;
+        width: 117px;
+        height: 117px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        font-size: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: calc(-117px / 2);
+        margin-bottom: calc(-117px / 2);
+        border-radius: 50%;
+    }
+
+    .ctf-tweets {
+        margin-top: 22px;
+    }
+
+    .ctf-item {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #ctf p.ctf-tweet-text {
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 1.87em !important;
+        font-family: $polimark-font;
+        color: $polimark-color-black;
+        width: 100%;
+        max-width: 1000px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-bottom: 20px !important;
+
+        @media(min-width: 992px) {
+            font-size: 30px;
+            margin-bottom: 40px !important;
+        }
+
+        a {
+            color: $polimark-color-primary;
+            transition: all 500ms ease;
+        }
+
+        br {
+            display: none;
+        }
+    }
+
+    .ctf-verified,
+    .ctf-screename-sep,
+    .ctf-author-name {
+        display: none !important;
+    }
+
+    .ctf-author-screenname {
+        font-size: 18px !important;
+        font-weight: 800;
+        color: $polimark-color-base !important;
+    }
+
+    .ctf-tweet-meta {
+        color: $polimark-color-text;
+        font-size: 18px !important;
+        font-weight: 500;
+        margin-left: 10px !important;
+    }
+
+    .owl-dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 35px;
+        display: none !important;
+
+        .owl-dot {
+            +.owl-dot {
+                margin-left: 10px;
+            }
+
+            &.active span {
+                opacity: 1;
+            }
+
+            span {
+                display: block;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background-color: $polimark-color-black;
+                opacity: 0.2;
+                transition: all 500ms ease;
+            }
+        }
+    }
+
+}

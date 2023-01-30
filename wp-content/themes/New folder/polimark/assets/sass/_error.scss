@@ -1,0 +1,85 @@
+.error-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    .content {
+        text-align: center;
+    }
+
+    #error-404 {
+        margin-bottom: 45px;
+    }
+
+    h2 {
+        margin: 0;
+        color: $polimark-color-black;
+        font-size: 40px;
+        font-weight: 800;
+        max-width: 434px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media(min-width: 481px) {
+            font-size: 50px;
+        }
+    }
+
+    .text {
+        font-size: 18px;
+        font-weight: 500;
+        color: $polimark-color-text;
+        margin: 0;
+        margin-bottom: 30px;
+        margin-top: 25px;
+    }
+
+    .thm-btn {
+        padding: 17px 12px;
+        padding-left: 39px;
+    }
+
+    .error-form {
+        width: 100%;
+        max-width: 656px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        margin-bottom: 20px;
+
+        input[type=text] {
+            outline: none;
+            border: none;
+            box-shadow: none;
+            width: 100%;
+            height: 70px;
+            border-radius: $polimark-border-radius;
+            border: 1px solid $polimark-color-border;
+            padding-left: 30px;
+            color: $polimark-color-text;
+            font-size: 18px;
+            font-weight: 500;
+            display: block;
+            font-family: $polimark-font;
+        }
+
+        ::placeholder {
+            opacity: 1;
+            color: $polimark-color-text;
+        }
+
+        button[type=submit] {
+            outline: none;
+            border: none;
+            box-shadow: none;
+            width: auto;
+            padding: 0;
+            background-color: transparent;
+            color: $polimark-color-base;
+            position: absolute;
+            top: 50%;
+            right: 30px;
+            transform: translateY(-50%);
+            font-size: 22px;
+        }
+    }
+}

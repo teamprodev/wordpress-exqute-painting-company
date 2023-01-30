@@ -1,0 +1,302 @@
+.comments-area {
+    position: relative;
+    margin-top: 30px;
+}
+
+.comments-area .comment-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.comments-area .comment-list ul.children {
+    margin: 0;
+    list-style: none;
+    padding-left: 3em;
+}
+
+.comments-area .comment-box {
+    position: relative;
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid $polimark-color-border;
+}
+
+.comments-area .comment {
+    position: relative;
+    min-height: 90px;
+}
+
+.comments-area .comment-box .author-thumb {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.comments-area .comment-box .author-thumb img {
+    width: 90px;
+    height: 90px;
+    display: block;
+    border-radius: 50%;
+}
+
+.comments-area .comment-box .info {
+    position: relative;
+    margin-bottom: 25px;
+    line-height: 24px;
+}
+
+.comments-area .comment-box .info .name {
+    position: relative;
+    display: block;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 800;
+    color: $polimark-color-black;
+    text-transform: uppercase;
+}
+
+.comments-area .comment-box .info .date {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+    color: $polimark-color-base;
+}
+
+.comments-area .comment-box .text {
+    position: relative;
+    display: block;
+    color: $polimark-color-text;
+    font-weight: 300;
+    line-height: 1.5em;
+    letter-spacing: 0.1em;
+    margin-bottom: 30px;
+}
+
+.comments-area .comment-box .reply-btn {
+    position: relative;
+    display: block;
+}
+
+.comments-area .comment-box .theme-btn .btn-title {
+    padding: 6px 30px 4px;
+    line-height: 30px;
+}
+
+.comments-area .comment-body .says {
+    display: none;
+}
+
+.comments-area .comment-body {
+    position: relative;
+    padding-left: 120px;
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid $polimark-color-border;
+}
+
+.comments-area .comment-body .avatar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+}
+
+.comments-area .fn a,
+.comments-area .fn {
+    position: relative;
+    display: block;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 800;
+    color: $polimark-color-black;
+    text-decoration: none;
+}
+
+.comments-area .comment-body .comment-metadata {
+    margin-bottom: 25px;
+}
+
+.comments-area .comment-body .comment-metadata a {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+    color: $polimark-color-base;
+    text-decoration: none;
+}
+
+.comments-area .comment-body .comment-metadata a:hover {
+    color: $polimark-color-black;
+}
+
+.comments-area .comment-body .comment-metadata .edit-link a::before {
+    content: '.';
+    margin-left: 8px;
+    margin-right: 10px;
+}
+
+.comments-area .comment-content p {
+    position: relative;
+    display: block;
+    color: $polimark-color-text;
+    font-weight: 300;
+    line-height: 1.5em;
+    letter-spacing: 0.1em;
+    margin-bottom: 30px;
+
+    font-size: 18px;
+    line-height: 30px;
+    font-family: $polimark-font;
+    letter-spacing: 0;
+    font-weight: 500;
+}
+
+.comments-area .comment-content table a {
+    color: $polimark-color-primary;
+    text-decoration: none;
+}
+
+.comments-area .comment-content {
+    font-weight: 500;
+}
+
+.comments-area .comment-content table a:hover {
+    color: $polimark-color-base;
+}
+
+.comments-area .comment-content p:last-of-type {
+    margin-bottom: 0;
+}
+
+
+.comments-area .reply a {
+    position: relative;
+    background-color: $polimark-color-gray;
+    font-size: 14px;
+    font-weight: 600;
+    color: $polimark-color-black;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 30px;
+    font-weight: 800;
+    border-radius: $polimark-border-radius;
+    transition: all 500ms ease;
+    margin-top: 40px;
+}
+
+@media(min-width: 992px) {
+
+    .comments-area .reply a {
+        margin-top: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+.comments-area .reply a:hover {
+    background-color: $polimark-color-background-primary;
+    color: #ffffff;
+}
+
+
+
+.comments-area .blog-post-pagination a,
+.comments-area .blog-post-pagination span {
+    margin-bottom: 45px;
+}
+
+
+.comment .comment-respond {
+    margin-bottom: 70px;
+}
+
+.comment-respond .form-submit {
+    margin-bottom: 0;
+}
+
+.comment-respond input[type=text],
+.comment-respond textarea,
+.comment-respond input[type=email],
+.comment-respond input[type=url] {
+    width: 100%;
+    height: 70px;
+    border-radius: $polimark-border-radius;
+    color: $polimark-color-text;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: $polimark-font;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: block;
+    outline: none;
+    border: 1px solid $polimark-color-border;
+}
+
+.comment-respond ::placeholder {
+    opacity: 1;
+    color: inherit;
+}
+
+.comment-respond textarea {
+    height: 192px;
+    padding-top: 20px;
+}
+
+.comment-respond .row {
+    --bs-gutter-x: 18px;
+    --bs-gutter-y: 18px;
+}
+
+.comment-respond .theme-btn {
+    display: inline-flex;
+    border: none;
+    outline: none;
+    background-color: $polimark-color-base;
+    border-radius: $polimark-border-radius;
+    color: #fff;
+    padding: 0;
+    line-height: 1;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 26px 57px;
+    font-family: $polimark-font;
+    transition: all 500ms ease;
+}
+
+.comment-respond .theme-btn:hover {
+    background-color: $polimark-color-primary;
+    color: #ffffff;
+}
+
+.comment-respond .blog-details__content-title {
+    margin-bottom: 50px;
+}
+
+.reply-form .logged-in-as {
+    display: flex;
+    font-weight: 500;
+    color: $polimark-color-base;
+    margin: 0;
+    margin-left: -10px;
+}
+
+.reply-form .logged-in-as a {
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}

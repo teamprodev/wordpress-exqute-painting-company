@@ -1,0 +1,28 @@
+
+---Downloaded files---
+The import files for: Polimark Demo Import were successfully downloaded!
+Initial max execution time = 60
+Files info:
+Site URL = http://wordpress
+Data file = C:\Users\micro\OneDrive\Desktop\OSPanel\domains\wordpresspolimarkelectionpolitical/wp-content/themes/New folder/polimark/inc/demo-data/sample-data.xml
+Widget file = C:\Users\micro\OneDrive\Desktop\OSPanel\domains\wordpresspolimarkelectionpolitical/wp-content/themes/New folder/polimark/inc/demo-data/widgets.wie
+Customizer file = C:\Users\micro\OneDrive\Desktop\OSPanel\domains\wordpresspolimarkelectionpolitical/wp-content/themes/New folder/polimark/inc/demo-data/customizer.dat
+Redux files:
+not defined!
+
+---Importing widgets---
+Sidebar : 
+
+Поиск - No Title - Widget already exists
+Smart Recent Posts - Recent Posts - Widget already exists
+Рубрики - No Title - Widget already exists
+Облако меток - Tags - Widget already exists
+Свежие комментарии - No Title - Widget already exists
+
+
+
+---Importing customizer settings---
+Error: The customizer import file is not suitable for current theme. You can only import customizer settings for the same theme or a child theme.
+
+---ocdi/after_import---
+

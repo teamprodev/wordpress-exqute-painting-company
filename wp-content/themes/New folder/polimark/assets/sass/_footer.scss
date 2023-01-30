@@ -1,0 +1,366 @@
+.default-footer {
+    background-color: $polimark-color-background;
+    padding-top: 40.5px;
+    padding-bottom: 40.5px;
+}
+
+.default-footer__text {
+    margin: 0;
+    color: $polimark-color-text-light;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.footer-top {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(#fff, .1);
+    margin-bottom: 80px;
+
+    @media(min-width: 768px) {
+        margin-bottom: 100px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+
+        @media(min-width: 992px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    .logo-box {
+        .logo {
+            img {
+                image-rendering: -moz-crisp-edges;
+                image-rendering: -o-crisp-edges;
+                image-rendering: -webkit-optimize-contrast;
+                image-rendering: crisp-edges;
+                -ms-interpolation-mode: nearest-neighbor;
+                -webkit-backface-visibility: hidden;
+                -ms-transform: translateZ(0);
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+            }
+        }
+    }
+
+    &__social {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media(min-width: 992px) {
+            margin-top: 0;
+        }
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: $polimark-color-black;
+            width: 42px;
+            height: 42px;
+            background-color: #fff;
+            border-radius: 7px;
+            transition: all 500ms ease;
+
+            &:hover {
+                background-color: $polimark-color-background-primary;
+                color: #fff;
+            }
+
+            +a {
+                margin-left: 12px;
+            }
+        }
+    }
+}
+
+
+.footer-widget {
+    &__title {
+        margin: 0;
+        font-size: 22px;
+        font-weight: 800;
+        color: #fff;
+        margin-bottom: 40px;
+    }
+
+    &__text {
+        margin: 0;
+        font-size: 16px;
+        line-height: 34px;
+        color: $polimark-color-text-light;
+        font-weight: 500;
+        margin-top: -14px;
+    }
+
+    &__infos {
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+
+        li {
+            position: relative;
+            color: $polimark-color-text-light;
+            font-size: 16px;
+            line-height: 36px;
+            font-weight: 500;
+            padding-left: 38px;
+
+            >i {
+                position: absolute;
+                top: 13px;
+                left: 0;
+                color: $polimark-color-base;
+                font-size: 16px;
+            }
+
+            a {
+                color: inherit;
+                transition: all 500ms ease;
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+
+            span {
+                font-size: 16px;
+                line-height: 28px;
+            }
+        }
+    }
+
+    &__menu {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        margin-top: -1px !important;
+
+        li {
+            font-size: 16px;
+            font-weight: 500;
+            color: $polimark-color-text-light;
+            line-height: 1;
+
+            +li {
+                margin-top: 20px;
+            }
+
+            a {
+                color: inherit;
+                transition: all 500ms ease;
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    &__news+&__news {
+        margin-top: 31px;
+    }
+
+    &__news {
+        position: relative;
+        padding-left: 0px;
+
+        @media(min-width: 768px) {
+            padding-left: 107px;
+        }
+
+        .image-box {
+            position: relative;
+            top: auto;
+            left: auto;
+            margin-bottom: 20px;
+
+            @media(min-width: 768px) {
+                position: absolute;
+                top: 0;
+                left: 0;
+                margin-bottom: 0;
+            }
+
+            img {
+                border-radius: $polimark-border-radius;
+            }
+        }
+
+        &__meta {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+            margin-bottom: 15px;
+
+            li {
+                font-size: 16px;
+                font-weight: 500;
+                color: $polimark-color-text-light;
+                line-height: 17px;
+                display: flex;
+                align-items: center;
+                margin-top: -3px;
+
+
+                &:last-child {
+                    color: $polimark-color-base;
+
+                }
+
+                &:not(:last-child) {
+                    &::after {
+                        content: '|';
+                        color: $polimark-color-text-light;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+
+        .content-box {
+            h3 {
+                font-size: 22px;
+                line-height: 30px;
+                color: #ffffff;
+                font-weight: 800;
+
+                a {
+                    color: inherit;
+                    transition: all 500ms ease;
+
+                    &:hover {
+                        color: $polimark-color-base;
+                    }
+                }
+            }
+        }
+    }
+
+    &.newsletter-widget {
+        .text {
+            margin: 0;
+            color: $polimark-color-text-light;
+            font-size: 16px;
+            line-height: 34px;
+            font-weight: 500;
+            margin-top: -14px;
+            margin-bottom: 19px;
+        }
+
+        input[type=email] {
+            width: 100%;
+            height: 70px;
+            border-radius: $polimark-border-radius;
+            background-color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 0 30px;
+            outline: none;
+            display: block;
+            line-height: 1;
+            margin-bottom: 10px;
+            font-family: $polimark-font;
+            border: none;
+
+            &::placeholder {
+                opacity: 1;
+                color: $polimark-color-text;
+            }
+        }
+
+        .thm-btn {
+            background-color: $polimark-color-primary;
+
+            &:hover {
+                background-color: $polimark-color-base;
+            }
+        }
+    }
+}
+
+
+.footer-bottom {
+    background-color: $polimark-color-background;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow: hidden;
+
+    @media(min-width: 992px) {
+        padding-top: 41px;
+        padding-bottom: 41px;
+        margin-top: -114px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        @media(min-width: 992px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &__copytext {
+        margin: 0;
+        color: $polimark-color-text-light;
+        font-size: 16px;
+        font-weight: 500;
+        margin: 0;
+        text-align: center;
+
+        @media(min-width: 992px) {
+            text-align: left;
+        }
+    }
+
+    &__menu {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: -19px;
+        margin-right: -19px;
+        text-align: center;
+        justify-content: center;
+
+        @media(min-width: 992px) {
+            text-align: left;
+        }
+
+        li {
+            color: $polimark-color-text-light;
+            font-size: 16px;
+            font-weight: 500;
+            margin-left: 19px;
+            margin-right: 19px;
+
+
+            a {
+                color: inherit;
+                transition: all 500ms ease;
+
+                &:hover {
+                    color: $polimark-color-base;
+                }
+            }
+        }
+    }
+}

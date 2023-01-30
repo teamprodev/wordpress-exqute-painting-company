@@ -1,0 +1,315 @@
+.team-one {
+    .block-heading {
+        margin-bottom: 50px;
+    }
+}
+
+.team-card {
+    border: 1px solid $polimark-color-border;
+    border-radius: 24px;
+    padding: 30px;
+
+    @media(min-width: 992px) {
+        padding: 50px;
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__image {
+        border-radius: 50%;
+        overflow: hidden;
+        width: 192px;
+        margin-right: 30px;
+        margin-bottom: 20px;
+
+        @media(min-width: 1200px) {
+            margin-bottom: 0;
+        }
+
+        >img {
+            width: 100%;
+        }
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 30px;
+        color: $polimark-color-text;
+        font-weight: 500;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        margin: 0;
+        color: $polimark-color-black;
+        font-weight: 800;
+        font-size: 30px;
+        margin-bottom: 8px;
+    }
+
+    &__tagline {
+        margin: 0;
+        color: $polimark-color-base;
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 1;
+    }
+
+    &__designation {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 500;
+        color: $polimark-color-text;
+        line-height: 1;
+        margin-top: 14px;
+        margin-bottom: 30px;
+    }
+
+    &__social {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+
+        li {
+            +li {
+                margin-left: 12px;
+            }
+
+            a {
+                display: flex;
+                border-radius: $polimark-border-radius;
+                width: 42px;
+                height: 42px;
+                background-color: $polimark-color-gray;
+                color: $polimark-color-black;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 500ms ease;
+
+                &:hover {
+                    background-color: $polimark-color-primary;
+                    color: #fff;
+                }
+            }
+
+
+        }
+    }
+}
+
+.team-two {
+    .block-heading {
+        margin-bottom: 50px;
+    }
+
+    .row {
+        @media(min-width: 1200px) {
+            --bs-gutter-x: 80px;
+        }
+    }
+}
+
+
+.team-card-two {
+    & &__image {
+        position: relative;
+        background-color: $polimark-color-black;
+        border-radius: 18px;
+
+        img {
+            width: 100%;
+            border-radius: 18px;
+            transition: opacity 500ms ease, transform 500ms ease;
+        }
+    }
+
+    &:hover &__image {
+        img {
+            opacity: 0.8;
+        }
+    }
+
+    &__social {
+        width: 48px;
+        position: absolute;
+        bottom: -24px;
+        right: 30px;
+
+        &__icon {
+            width: 48px;
+            height: 48px;
+            background-color: $polimark-color-base;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            color: #fff;
+            border-radius: 50%;
+        }
+
+        &__content {
+            position: absolute;
+            bottom: calc(100% + 15px);
+            left: 0;
+            width: 48px;
+            border-radius: $polimark-border-radius;
+            background-color: #fff;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 500ms ease, visibility 500ms ease, transform 500ms ease;
+            transform: translateY(-30%);
+
+            &::after {
+                content: '';
+                width: 10px;
+                height: 5px;
+                background-color: #fff;
+                clip-path: polygon(50% 100%, 0 0, 100% 0);
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        &:hover &__content {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        &__item {
+            display: flex;
+            align-items: center;
+            line-height: 1;
+            justify-content: center;
+
+            a {
+                color: $polimark-color-text;
+                font-size: 16px;
+                transition: all 500ms ease;
+
+                &:hover {
+                    color: $polimark-color-primary;
+                }
+            }
+        }
+
+        &__item+&__item {
+            margin-top: 20px;
+        }
+    }
+
+    &__content {
+        text-align: center;
+    }
+
+    &__title {
+        margin: 0;
+        line-height: 1;
+        color: $polimark-color-black;
+        font-size: 30px;
+        font-weight: 800;
+        margin-top: 25px;
+    }
+
+    &__designation {
+        margin: 0;
+        color: $polimark-color-text;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1;
+        margin-top: 17px;
+    }
+}
+
+
+.volunteer-feature {
+
+    .block-heading {
+        margin-bottom: 40px;
+    }
+
+    .row {
+        @media(min-width: 992px) {
+            --bs-gutter-y: 45px;
+        }
+    }
+
+    &-card {
+        position: relative;
+        padding-left: 77px;
+
+        i {
+            position: absolute;
+            top: calc(50% - 28.5px);
+            left: 0;
+            width: 57px;
+            height: 57px;
+            background-color: $polimark-color-background-primary;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: #fff;
+            border-radius: 50%;
+            transform: scale(1);
+            transition: transform 500ms ease, background 500ms ease;
+
+        }
+
+        &:hover i {
+            transform: scale(.85);
+            background-color: $polimark-color-base;
+        }
+
+        p {
+            margin: 0;
+            color: $polimark-color-text;
+            font-size: 18px;
+            line-height: 36px;
+            font-weight: 500;
+        }
+    }
+}
+
+
+.team-two-carousel {
+    .block-heading {
+        margin-bottom: 50px;
+    }
+
+    .owl-dots {
+        display: none;
+    }
+
+    .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+
+        @media(min-width: 992px) {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        @media(min-width: 1200px) {
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+
+        @media(min-width: 1440px) {
+            padding-left: 190px;
+            padding-right: 190px;
+        }
+    }
+}
